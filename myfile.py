@@ -1,8 +1,8 @@
-import numpy as np
+class Test: 
+    def divideNums(self, number1, number2):
+        num = number1/number2
+        print("Number divided: ", num)
 
-i = 0
+test = Test()
 
-while i < 10:
-    num = i / i;
-    print("num over num: ", num)
-    i = i + 1
+test.divideNums(0,0)
