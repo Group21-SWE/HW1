@@ -5,9 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "**" ]
 
 permissions:
   contents: read
@@ -29,5 +27,4 @@ jobs:
         if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        echo $PWD
         pytest test_myfile.py
