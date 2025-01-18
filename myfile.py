@@ -5,4 +5,4 @@ class Test:
 
 test = Test()
 
-test.divideNums(0,0)
+# test.divideNums(0,0)
